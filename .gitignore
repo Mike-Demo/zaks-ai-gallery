@@ -5,3 +5,4 @@ public/_next/
 public/artworks/*.html
 *.log
 .DS_Store
+.local/
