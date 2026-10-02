@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const artwork = getArtwork(slug);
   if (!artwork) return { title: "Not found" };
   return {
-    title: `${artwork.title} — Thresholds`,
+    title: `${artwork.title}: Thresholds`,
     description: artwork.shortDescription,
   };
 }
@@ -30,7 +30,7 @@ export default async function ArtworkPage({ params }: { params: Promise<{ slug: 
       </p>
       <div className="detail">
         <figure>
-          <img src={artwork.image} alt={`${artwork.title} by Zak — ${artwork.shortDescription}`} />
+          <img src={artwork.image} alt={`${artwork.title} by Zak, ${artwork.shortDescription}`} />
         </figure>
         <div>
           <h1>{artwork.title}</h1>
