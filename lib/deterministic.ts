@@ -17,7 +17,7 @@ const AVAIL_RE = /\b(available|for sale|still have|sold|reserved|buy it|purchase
 const DIM_RE = /\b(dimensions?|size|how big|measurements?|inches)\b/i;
 const MEDIUM_RE = /\b(medium|material|made of|painted with|canvas|panel)\b/i;
 const CONTACT_RE = /\b(contact|email|reach zak|get in touch|buy|acquire|purchase|interested)\b/i;
-const SIMILAR_RE = /\b(similar|other works|like this|explore.*theme|same.*theme)\b/i;
+const SIMILAR_RE = /\b(similar|other works|which works|like this|explore.*theme|same.*theme)\b/i;
 
 /**
  * Commerce and factual questions are answered deterministically from
