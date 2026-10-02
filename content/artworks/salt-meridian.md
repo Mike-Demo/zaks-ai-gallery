@@ -8,8 +8,8 @@ misremembering do the composition.
 
 ## Themes
 
-Memory, place, erosion. About how shorelines — and stories about
-shorelines — wear down with retelling.
+Memory, place, erosion. About how shorelines, and stories about
+shorelines, wear down with retelling.
 
 ## Process
 
