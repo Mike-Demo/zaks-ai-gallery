@@ -8,7 +8,7 @@ pavement light, a moment longer than it lasts."
 
 ## Themes
 
-Memory, weather, light. A companion to Blue Passage — both are about
+Memory, weather, light. A companion to Blue Passage. Both are about
 surfaces that remember something briefly and then let it go.
 
 ## Process
