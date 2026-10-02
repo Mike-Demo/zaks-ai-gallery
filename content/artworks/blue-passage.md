@@ -9,7 +9,7 @@ describes it as "a study of memory, distance, and interrupted movement."
 
 ## Themes
 
-Memory, thresholds, movement. The horizontal bands are crossings —
+Memory, thresholds, movement. The horizontal bands are crossings:
 each one a version of the same passage, none of them quite arriving.
 
 ## Process
@@ -17,7 +17,7 @@ each one a version of the same passage, none of them quite arriving.
 Oil and cold wax on panel, built in roughly twelve layers over three
 months. Zak scraped back the top layers with a silicone blade until the
 underpainting showed through in places, then glazed the blues back over
-it. "What remains is what survived the crossing" — that sentence was
+it. "What remains is what survived the crossing": that sentence was
 written in the studio notebook on the day it was finished.
 
 ## Exhibition context
