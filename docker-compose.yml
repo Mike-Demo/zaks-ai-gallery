@@ -1,0 +1,33 @@
+# Local open-AI stack for Zak's AI Gallery Guide.
+# The SpaceFast deployment never runs these — they power the laptop demo
+# and local development (scripts/local-server.ts).
+#
+#   docker compose up -d
+#   docker exec zaks-ollama ollama pull qwen3:4b
+#   docker exec zaks-ollama ollama pull qwen3-embedding:0.6b
+#   npm run ingest   # embed content/ -> Chroma
+#   npm run local    # gallery + full RAG at http://localhost:3100
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: zaks-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+    restart: unless-stopped
+
+  chroma:
+    image: chromadb/chroma:latest
+    container_name: zaks-chroma
+    ports:
+      - "8000:8000"
+    volumes:
+      - chroma-data:/data
+    command: ["--path", "/data", "--port", "8000"]
+    restart: unless-stopped
+
+volumes:
+  ollama-data:
+  chroma-data:
