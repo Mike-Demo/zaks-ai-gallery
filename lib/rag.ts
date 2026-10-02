@@ -97,6 +97,9 @@ async function chat(prompt: string): Promise<string> {
     body: JSON.stringify({
       model: CHAT_MODEL,
       stream: false,
+      // Qwen3 is a hybrid reasoning model: without this it can spend the
+      // whole num_predict budget inside <think> tags and return empty content.
+      think: false,
       messages: [{ role: "user", content: prompt }],
       options: { temperature: 0.3, num_predict: 220 },
     }),
