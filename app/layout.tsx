@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Thresholds — Zak's AI Gallery Guide",
+  title: "Thresholds: Zak's AI Gallery Guide",
   description:
     "Explore Zak's exhibition Thresholds with a private AI guide grounded in the artist's own notes. Ask about any work, check availability, and contact Zak.",
 };
@@ -27,10 +27,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <footer>
           <div className="wrap">
             <p>
-              <strong>Thresholds</strong> — a solo exhibition by Zak, Oct 9 – Nov 21, 2026.
+              <strong>Thresholds</strong>, a solo exhibition by Zak, Oct 9 – Nov 21, 2026.
               The AI guide answers only from Zak&apos;s approved notes and catalog data.
             </p>
-            <p>Sample build for the open-source AI challenge — artwork, notes, and prices are placeholders.</p>
+            <p>Sample build for the open-source AI challenge. Artwork, notes, and prices are placeholders.</p>
           </div>
         </footer>
       </body>
