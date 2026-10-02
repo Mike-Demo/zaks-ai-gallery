@@ -44,7 +44,7 @@ export function InquiryForm({
   if (done) {
     return (
       <div className="success" role="status">
-        <h2>Thank you — Zak has your inquiry.</h2>
+        <h2>Thank you. Zak has your inquiry.</h2>
         <p>
           Your message about <strong>“{artworkTitle}”</strong> is on its way to
           Zak. They&apos;ll reply personally about availability, pricing, and
@@ -59,7 +59,7 @@ export function InquiryForm({
       <h2>Ask about acquiring this work</h2>
       <p style={{ margin: "4px 0 0", color: "var(--ink-soft)", fontSize: "0.92rem" }}>
         {soldish
-          ? `“${artworkTitle}” isn't currently listed as available, but you're welcome to ask Zak about it — or about similar works.`
+          ? `“${artworkTitle}” isn't currently listed as available, but you're welcome to ask Zak about it, or about similar works.`
           : `Interested in “${artworkTitle}”? Send Zak a note.`}
       </p>
       <form onSubmit={submit}>
@@ -93,7 +93,7 @@ export function InquiryForm({
         </p>
         {error && <p className="error">{error}</p>}
         <button className="btn" type="submit" disabled={sending}>
-          {sending ? "Sending…" : "I'm interested — send to Zak"}
+          {sending ? "Sending…" : "Send my inquiry to Zak"}
         </button>
       </form>
     </section>
