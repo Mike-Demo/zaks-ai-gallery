@@ -1,14 +1,14 @@
 # Zak's AI Gallery Guide
 
 > A private, artist-grounded AI guide for Zak's solo exhibition
-> **Thresholds** — explore the show, hear the stories behind individual
+> **Thresholds**: explore the show, hear the stories behind individual
 > works, and contact Zak about available pieces.
 
 ## The problem
 
 Zak has a physical exhibition, but many interested people will never
-visit the gallery. Ordinary online galleries show images and prices —
-they don't recreate the conversation that happens beside a painting.
+visit the gallery. Ordinary online galleries show images and prices.
+They don't recreate the conversation that happens beside a painting.
 
 ## The product
 
@@ -39,7 +39,7 @@ flowchart LR
     end
     subgraph LocalAI[Laptop: local open AI]
         F[Local server<br/>same static site]
-        G[LangChain.js retrieval]
+        G[Direct REST retrieval]
         H[Chroma +<br/>Qwen3-Embedding 0.6B]
         I[Ollama: Qwen3 4B]
     end
@@ -54,7 +54,7 @@ flowchart LR
 ```
 
 **Why two runtimes?** SpaceFast serves static files + serverless
-functions + a database — it cannot run Ollama, local models, or a
+functions + a database. It cannot run Ollama, local models, or a
 persistent Chroma. So:
 
 - **Public SpaceFast deployment**: full gallery, deterministic commerce
@@ -62,8 +62,8 @@ persistent Chroma. So:
   from the catalog, inquiry capture to the database. Story questions get
   an honest "the full guide runs locally" message.
 - **Local AI mode** (`npm run local`): the same site with the full RAG
-  pipeline — LangChain.js → Chroma (Qwen3-Embedding 0.6B) →
-  Ollama (Qwen3 4B) — for the recorded 2-minute demo and Zak's own use.
+  pipeline (direct REST calls to Chroma with Qwen3-Embedding 0.6B, then
+  Ollama with Qwen3 4B) for the recorded 2-minute demo and Zak's own use.
 
 This is the challenge's recommended strategy: *public frontend plus a
 documented local AI mode.*
@@ -116,17 +116,17 @@ Zak judges ≥4/5 story answers accurate.
 
 ## Limitations
 
-- Small local models need tight prompting; RAG doesn't guarantee truth
-  by itself — that's why prices never come from the model.
+- Small local models need tight prompting. RAG doesn't guarantee truth
+  by itself, which is why prices never come from the model.
 - One exhibition, six works in this build; not a multi-artist platform.
-- No payment, accounts, reservations, or analytics — intentionally.
+- No payment, accounts, reservations, or analytics, by design.
 
 ## License
 
 MIT. Artwork images and artist notes in `content/` are Zak's (sample
-placeholders in this scaffold) — not covered for reuse.
+placeholders in this scaffold). Not covered for reuse.
 
 ## Credits
 
 Built for the open-source AI challenge. Concept, artwork, and words:
-Zak. Open stack: Ollama, Qwen3, Chroma, LangChain.js, Next.js, SpaceFast.
+Zak. Open stack: Ollama, Qwen3, Chroma, Next.js, SpaceFast.
