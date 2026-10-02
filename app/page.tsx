@@ -12,10 +12,10 @@ export default function Home() {
           <div className="kicker">A solo exhibition · Oct 9 – Nov 21, 2026</div>
           <h1>Thresholds</h1>
           <p className="lede">
-            Six works about the moments between things — the hallway before the
-            door opens, the season before it turns. Explore the show with
-            Zak&apos;s private AI guide, grounded entirely in the artist&apos;s
-            own notes.
+            Six works about the moments between things: the hallway before
+            the door opens, the season before it turns. Explore the show with
+            Zak&apos;s private AI guide, grounded in the artist&apos;s own
+            notes.
           </p>
           <div className="hero-cta">
             <a className="btn" href="#works">Enter the exhibition</a>
@@ -48,7 +48,7 @@ export default function Home() {
             <p className="sub">
               Zak is a painter working in oil and cold wax on panel. Their work
               explores memory, distance, and the physical feeling of moving
-              through transitional spaces — hallways, shorelines, seasons.
+              through transitional spaces: hallways, shorelines, seasons.
             </p>
             <a className="btn ghost" href="/about">More about Zak</a>
           </div>
@@ -57,7 +57,7 @@ export default function Home() {
             <p style={{ fontSize: "0.92rem", color: "var(--ink-soft)" }}>
               The guide answers from three sources only: Zak&apos;s artist
               notes, the exhibition statement, and the artwork catalog. Prices
-              and availability come straight from structured data — never from
+              and availability come straight from structured data, never from
               the model. When Zak&apos;s notes don&apos;t cover a question, the
               guide says so instead of inventing an answer.
             </p>
@@ -74,7 +74,7 @@ export default function Home() {
           <h2>Contact</h2>
           <p className="sub">
             Interested in a piece? Open its page and use the{" "}
-            <em>“Ask about acquiring this work”</em> form — your message goes
+            <em>“Ask about acquiring this work”</em> form. Your message goes
             straight to Zak with the artwork attached.
           </p>
         </div>
