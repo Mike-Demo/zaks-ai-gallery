@@ -4,7 +4,7 @@
 
 Zak is a painter working in oil and cold wax on panel. Their work
 explores memory, distance, and the physical feeling of moving through
-transitional spaces — hallways, shorelines, seasons.
+transitional spaces: hallways, shorelines, seasons.
 
 Zak studied painting at [school], has exhibited in [cities], and keeps
 a studio practice grounded in material experimentation: building up
